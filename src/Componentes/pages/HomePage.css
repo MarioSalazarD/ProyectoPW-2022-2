@@ -1,0 +1,20 @@
+body{
+    background-color: grey;
+}
+.body{
+    background-color: #32314a;
+    padding: 32px;
+    min-height: 100%;
+}
+.text-main{
+    color: white;
+}
+.logo{
+    width: 100%;
+    height: auto;
+}
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}

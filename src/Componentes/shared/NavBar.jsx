@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
     return(
@@ -18,8 +19,17 @@ const NavBar = () => {
                             <Nav.Link href="#Ranking">Ranking</Nav.Link>
                         </Nav>
                         <Nav className="text end">
-                            <Nav.Link href="#Account">Account</Nav.Link>
-                            <Nav.Link href="#Account">cart</Nav.Link>
+                        <NavDropdown title="Account" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#Login">Login</NavDropdown.Item>
+                                <NavDropdown.Item href="#Register">
+                                    Register
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action5">
+                                    Something else here
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#Cart">cart</Nav.Link>
                         </Nav>
                     </Container>
                     </Navbar>

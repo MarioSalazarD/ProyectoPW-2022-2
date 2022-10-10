@@ -2,16 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-
+import './Footer.css'
 
 const Footer = () => {
     return(
-        <Container>
+        <Container className='Footer'>
             <Row>
                 <Col>
                     <h3>Sign up to our newsletter for the lastest PC news.</h3>
                     <form>
                         <input type="Email" placeholder='Put your Email' />
+                        <div className='divider'/>
                         <Button variant="primary">Subscribe</Button>{' '}
                     </form> 
                 </Col>
@@ -38,10 +39,10 @@ const Footer = () => {
                 </Col>
             </Row>
             <Row>
-                <div>a</div>
+                <div>logo   logo    logo</div>
             </Row>
             <Row>
-                <Col>
+                <Col className='copyright'>
                     <div>Copyright 2022 Build Redux. All Rights Recerved</div>
                 </Col>
             </Row>
