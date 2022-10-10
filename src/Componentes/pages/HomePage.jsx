@@ -1,20 +1,25 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {NavBar, Footer} from '../shared';
+
 
 
 const HomePage = () => {
     return(
         <Container>
             <Row>
-                <Col>
-                    <h1>Este es el header</h1>
-                </Col>
+                <NavBar></NavBar>
             </Row>
             <Row>
                 <Col>
-                    <h3>este es el body</h3>
+                a
+                s
+                s
                 </Col>
+            </Row>
+            <Row className='fixed-bottom'>
+                <Footer></Footer>
             </Row>
         </Container>
     )
