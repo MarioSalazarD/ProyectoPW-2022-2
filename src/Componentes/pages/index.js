@@ -1,3 +1,2 @@
-import HomePage from "./HomePage";
-
-export default HomePage
+export {default as HomePage} from './HomePage'
+export {default as Login} from './Login'

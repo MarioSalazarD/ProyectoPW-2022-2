@@ -1,22 +1,20 @@
+import './HomePage.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {NavBar, Footer, Gallery} from '../shared';
+import {NavBar, Footer} from '../shared';
 import Button from 'react-bootstrap/Button';
-import './HomePage.css'
-
 
 
 
 const HomePage = () => {
     return(
-        <Container>
+        <Container className="vh-100 d-flex flex-column ">
             <Row>
                 <NavBar></NavBar>
             </Row>
-            <Row>
-                <Col >
-                    <div className='body'>
+            <Row className="h-100">
+                <Col className='body-main'>
                         <img src="img/msi-logo.png" className='logo' />
                         <p className='text-main'>
                         <h2>Build your PC!</h2>
@@ -26,11 +24,10 @@ const HomePage = () => {
                         <div className='divider'/>
                         <Button type="submit">Advance Building</Button>{' '}
                         </p>
-                    </div>
 
                 </Col>
             </Row>
-            <Row className='fixed-bottom'>
+            <Row>
                 <Col>
                     <Footer></Footer>
                 </Col>

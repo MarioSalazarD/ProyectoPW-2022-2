@@ -1,10 +1,11 @@
-body{
-    background-color: grey;
+html,body{
+    background-color: grey !important;
 }
-.body{
+.body-main{
     background-color: #32314a;
     padding: 32px;
-    min-height: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
 }
 .text-main{
     color: white;
@@ -17,4 +18,8 @@ body{
     width:5px;
     height:auto;
     display:inline-block;
+}
+.Container{
+    height:100%;
+    width: 100%
 }

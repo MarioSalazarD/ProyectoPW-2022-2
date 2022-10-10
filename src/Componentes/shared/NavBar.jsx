@@ -10,9 +10,9 @@ const NavBar = () => {
         <Container>
             <Navbar bg="dark" variant="dark">
                     <Container>
-                    <Navbar.Brand href="#home">Icono</Navbar.Brand>
+                    <Navbar.Brand href="/home">Icono</Navbar.Brand>
                         <Nav>
-                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="#features">About</Nav.Link>
                             <Nav.Link href="#Support">Support</Nav.Link>
                             <Nav.Link href="#Reviews">Reviews</Nav.Link>
@@ -20,7 +20,7 @@ const NavBar = () => {
                         </Nav>
                         <Nav className="text end">
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#Login">Login</NavDropdown.Item>
+                                <NavDropdown.Item href="Login">Login</NavDropdown.Item>
                                 <NavDropdown.Item href="#Register">
                                     Register
                                 </NavDropdown.Item>
