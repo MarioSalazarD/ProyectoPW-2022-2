@@ -19,7 +19,9 @@ const HomePage = () => {
                 </Col>
             </Row>
             <Row className='fixed-bottom'>
-                <Footer></Footer>
+                <Col>
+                    <Footer></Footer>
+                </Col>
             </Row>
         </Container>
     )
