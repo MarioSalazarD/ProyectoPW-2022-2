@@ -21,7 +21,7 @@ const NavBar = () => {
                         <Nav className="text end">
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="Login">Login</NavDropdown.Item>
-                                <NavDropdown.Item href="#Register">
+                                <NavDropdown.Item href="Register">
                                     Register
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
