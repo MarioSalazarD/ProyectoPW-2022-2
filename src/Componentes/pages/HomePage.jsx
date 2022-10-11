@@ -15,7 +15,7 @@ const HomePage = () => {
             </Row>
             <Row className="h-100">
                 <Col className='body-main'>
-                        <img src="img/msi-logo.png" className='logo' />
+                        <img src="img/msi-logo.png" className='logo' alt = "logo"/>
                         <p className='text-main'>
                         <h2>Build your PC!</h2>
                         <h4>Just for what you need</h4>
