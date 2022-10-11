@@ -1,6 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -29,7 +27,7 @@ const NavBar = () => {
                                     Something else here
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#Cart">cart</Nav.Link>
+                            <Nav.Link href="Cart">cart</Nav.Link>
                         </Nav>
                     </Container>
                     </Navbar>

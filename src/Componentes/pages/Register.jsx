@@ -1,8 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import {NavBar, Footer} from '../shared';
-import Button from 'react-bootstrap/Button';
 import './Login.css'
 
 const Register = () => {
