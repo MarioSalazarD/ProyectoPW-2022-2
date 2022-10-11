@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { HomePage, Login, ProfileInfo, Review} from './Componentes/pages'
+import { HomePage, Login, ProfileInfo, Review, Register} from './Componentes/pages'
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
           <Route path="/" element={<HomePage />}/>
           <Route path="/Login" element={<Login />}/>
           <Route path="/Profile" element={<ProfileInfo/>}/>  
-          <Route path="/Review" element={<Review/>}/>  
+          <Route path="/Review" element={<Review/>}/> 
+          <Route path="/Register" element={<Register/>}/> 
         </Routes>
       </BrowserRouter>
     </>
