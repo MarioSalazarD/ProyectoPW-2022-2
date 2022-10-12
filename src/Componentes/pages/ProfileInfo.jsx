@@ -8,7 +8,7 @@ import {NavBar , Country} from '../shared';
 
 const ProfileInfo = () => {
     return(
-        <Container>
+        <Container fluid style={{ backgroundColor: '#343f4b', height :'61.2rem' }} >
             <Row>
                 <NavBar></NavBar>
             </Row>
