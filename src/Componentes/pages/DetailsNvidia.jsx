@@ -11,6 +11,13 @@ const cardcars = dataCardsDetails.map(item => {return(
     />
   )})
 
+const carddetails = dataCardsDetails.map(item => {return(
+    <CardDetails
+    key = {item.id}
+    item = {item}
+    />
+  )})
+
 const DetailsNvidia = () => {
 
     return(
@@ -23,7 +30,7 @@ const DetailsNvidia = () => {
                 {cardcars[0]}
                 </Col>
                 <Col>
-                <CardDetails></CardDetails>
+                {carddetails[0]}
                 </Col>
             </Row>
         </Container>

@@ -11,6 +11,13 @@ const cardcars = dataCardsDetails.map(item => {return(
     />
   )})
 
+const carddetails = dataCardsDetails.map(item => {return(
+    <CardDetails
+    key = {item.id}
+    item = {item}
+    />
+  )})
+
 const DetailsKeyboard = () => {
 
     return(
@@ -23,7 +30,7 @@ const DetailsKeyboard = () => {
                 {cardcars[2]}
                 </Col>
                 <Col>
-                <CardDetails></CardDetails>
+                {carddetails[2]}
                 </Col>
             </Row>
         </Container>
