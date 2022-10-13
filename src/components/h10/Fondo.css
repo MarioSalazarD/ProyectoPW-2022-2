@@ -10,7 +10,7 @@ html,body{
 }
 
 .Container{
-    background-color: #32314a;
+    background-color: hsl(242, 21%, 24%);
     height:100%;
     width: 100%
 }
@@ -28,31 +28,16 @@ h1{
     display:inline-block;
 }
 
-
-.boton1{
-  background-color: white; /* Green */
-  border: none;
-  color: black;
-  padding: 8px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.divider1{
+    width: 200px;
+    height:auto;
+    display:inline-block;
 }
-.boton2{
-    background-color: purple; /* Green */
-    border: none;
-    color: white;
-    padding: 8px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
 
 .sep{
     width: 35%;
     margin-top: -55px;
-    margin-left: 65%;
+    margin-left: 68%;
     border: solid;
 }
+
