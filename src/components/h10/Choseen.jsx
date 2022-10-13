@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,8 +9,11 @@ import ProductCard from './Background/Card';
 import './Fondo.css'
 
 import NavBar from "./Background/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Builder from './Builder(h11)';
 
-const Home10 = () => {
+
+const Choseen = () => {
     return (
         <>
         <Container className="vh-100 d-flex flex-column ">
@@ -60,8 +66,8 @@ const Home10 = () => {
                       path2="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
                       texto= "Other"
                       oferta= "/offer/6"/>
-    
                       </Col>
+                      
 
                 </Col>
             </Row>
@@ -73,4 +79,5 @@ const Home10 = () => {
 
 }
 
-export default Home10;
+export default Choseen;
+
