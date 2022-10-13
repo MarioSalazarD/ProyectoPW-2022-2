@@ -8,21 +8,21 @@ import {NavBar , Country} from '../shared';
 
 const ProfileInfo = () => {
     return(
-        <Container fluid style={{ backgroundColor: '#343f4b', height :'61.2rem' }} >
+        <Container fluid style={{ backgroundColor: '#343f4b', height :'61.2rem' , margin : '0px'}} >
             <Row>
                 <NavBar></NavBar>
             </Row>
             <Row>
-                <Col xs lg="3">
+                <Col lg="3">
                 INSERTAR MENÚ LATERAL
                 </Col>
-                <Col md="auto" xs lg="2" className ="Default" > 
+                <Col lg="2" className ="Default" style={{ marginTop: '9rem', height : '44rem' , width: '15rem'}}> 
                 <h6><strong>Default</strong></h6>
                 <p>Ed Va <br/> United States</p>
                 </Col >
-                <Col className = "Form">
+                <Col className = "Form" style={{ marginTop: '9rem', height : '44rem' }}>
                     <Form>
-                    <Row className="mb-3">
+                    <Row className="mb-3" >
                         <Form.Group as={Col} controlId="formGridFirstName">
                         <Form.Label>First Name</Form.Label>
                         <Form.Control type="text" placeholder="First Name" />
@@ -69,8 +69,8 @@ const ProfileInfo = () => {
                         <Form.Label>Phone</Form.Label>
                         <Form.Control type = "text" placeholder="Enter your phone"/>
                         </Form.Group>
-                        <Button as="input" type="submit" value="Update Info"/>{' '}
-                        <Button variant="link">Cancel</Button>
+                        <Button as="input" type="submit" value="Update Info" style={{ backgroundColor : '#c25be9', 'margin-top': '3rem', width : '12rem', borderColor : '#c25be9' , borderRadius : '4px',boxShadow : '2px 4px 5px 0px rgba(0,0,0,0.13)'}}/>{' '}
+                        <Button variant="link" style={ {'margin-top': '4rem', color : ' #757985' , 'text-decoration': 'none'}}>Cancel</Button>
                     </Form>
                 </Col>
             </Row>
