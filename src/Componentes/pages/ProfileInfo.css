@@ -1,4 +1,6 @@
-
+html,body{
+    background-color: #343f4b !important;
+}
 .Form{
     background-color: white;
     padding: 32px;
