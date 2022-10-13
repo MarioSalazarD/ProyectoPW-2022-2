@@ -36,7 +36,7 @@ export default[{
 {
     id: "3",
     imgsrc : "img/keyboard.jpg",
-    title: "keyboard & mouse bundle",
+    title: "KEYBOARD AND MOUSE RAZER",
     price: "Precio: $39",
     titledetail1: "MODEL KEYBOARD",
     detail1: "Cynosa Chroma Lite",
