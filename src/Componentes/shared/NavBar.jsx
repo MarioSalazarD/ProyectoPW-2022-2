@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import SearchBar from './SearchBar';
 
 
 const NavBar = () => {
@@ -19,6 +19,7 @@ const NavBar = () => {
                             <Nav.Link href="#Ranking">Ranking</Nav.Link>
                         </Nav>
                         <Nav className="text end">
+                        <SearchBar></SearchBar>
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="Login">Login</NavDropdown.Item>
                                 <NavDropdown.Item href="Register">
