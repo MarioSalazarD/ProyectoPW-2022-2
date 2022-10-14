@@ -32,7 +32,7 @@ const data = [{
     return(
         <Container>
                 <NavBar></NavBar>
-                <h1>Influencers</h1>
+                <h1 style = {{'color':'white'}}>Influencers</h1>
                 <br/>
                 <br/>
         <Row>
