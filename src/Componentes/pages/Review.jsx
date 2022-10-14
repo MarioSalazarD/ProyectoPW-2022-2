@@ -1,52 +1,49 @@
-import './HomePage.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {NavBar, Footer} from '../shared';
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.css';
-import nate from '../img/nate.jpg';
-import influencer1 from '../img/influencer1.jpg';
-import influencer2 from '../img/influencer2.jpg';
-import './Review.css'
+import ReviewCard from '../shared/ReviewCard';
+import { NavBar } from '../shared';
+
+
 const Review = () => {
+
+const data = [{
+            id: "1",
+            title: "Nate Gentile",
+            srcvid: "https://www.youtube.com/embed/5O_v6QrU9Kk",
+            youtube: "https://www.youtube.com/c/NateGentile7",
+            description: "Compré un excelente componente, de gran calidad y a un bajo precio"
+        },
+        {
+            id:"2",
+            title: "Linux Tech",
+            srcvid: "https://www.youtube.com/embed/ZbZ32mqmsrg",
+            youtube: "https://www.youtube.com/c/LinusTechTips",
+            description: "This computer is absolutely insane! Once again if your want to check out this brand new Redux gaming PC- It's absolute super computer. Highly, highly, recommend it."
+        },
+        {
+            id:"3",
+            title: "PewDiePie",
+            srcvid: "https://www.youtube.com/embed/Ah5MYGQBYRo",
+            youtube: "https://www.youtube.com/user/PewDiePie",
+            description: "You basically just pick which games you play, which performance you want, and it'll suggest a rig for you. They make things much, much simpler and again for only $75 bucks? Okay!"
+        }]
+
     return(
-        <Container className="vh-100 d-flex flex-column ">
-            <Row>
+        <Container>
                 <NavBar></NavBar>
-            </Row>
+                <h1>Influencers</h1>
+                <br/>
+                <br/>
+        <Row>
+            <ReviewCard {...data[0]}/>
+            <ReviewCard {...data[1]}/>
+            <ReviewCard {...data[2]}/>
 
-            <div className="row " >
-            <div className="col-lg-3" >
-              <h2 className="kind">Nate Gentile</h2>
-              <div className="row" id="influencer">
-              <img src={nate} alt="horse" className="influencer"  />
-                VIDEO
-                </div>
-
-              </div>
-            <div className="col-lg-3" >
-              <h2 className="kind">Linux Tech</h2>
-              <div className="row" id="influencer">
-              <img src={influencer1} alt="horse" className="influencer" />
-
-              VIDEO
-                </div>
-
-
-                </div>
-             <div className="col-lg-3" >
-              <h2 className="kind">PewDiePie</h2>
-              <div className="row" id="influencer">
-              <img src={influencer2} alt="horse" className="influencer" />
-
-              VIDEO
-                </div>
-              </div>
-              </div>
-
-        </Container>
+        </Row>
+    </Container>
     )
+
 }
 
 
