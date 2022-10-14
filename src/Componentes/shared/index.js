@@ -7,5 +7,7 @@ export {default as CardDetails} from './CardDetails'
 export {default as ReviewCard} from './ReviewCard'
 export {default as SearchBar} from './SearchBar'
 export {default as TrashCar} from './TrashCar'
-
+export {default as CardRanking} from './CardRanking'
+export {default as CardUserReviews} from './CardUserReviews'
+export {default as RatingUserReviews} from './RatingUserReviews'
 
