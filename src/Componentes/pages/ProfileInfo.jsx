@@ -45,7 +45,7 @@ const ProfileInfo = () => {
 
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridAparmaent">
-                        <Form.Label>Aparmaent, suit, etc</Form.Label>
+                        <Form.Label>Apartment, suit, etc</Form.Label>
                         <Form.Control type="text" placeholder="Aparmaent, suit, etc" />
                         </Form.Group>
 
