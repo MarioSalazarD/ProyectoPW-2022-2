@@ -3,35 +3,32 @@ import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
 import CardRanking from '../shared/CardRanking';
 import { NavBar } from '../shared';
-import headset from '../img/headset.jpg';
-import mousekeyboard from '../img/mousekeyboard.jpg';
-import standardmousepad from '../img/standardmousepad.jpg';
-import XLmousepad from '../img/XLmousepad.jpg';
+
 
 const Ranking = () => {
 
 const data = [{
             id: "1",
             title: "Headset",
-            srcimg: "headset.jpg",
+            srcimg: "img/headset.jpg",
             description: "$25"
         },
         {
             id:"2",
             title: "Mouse & keyboards",
-            srcimg: "mouse&keyboard.jpg",
+            srcimg: "img/mousekeyboard.jpg",
             description: "$39"
         },
         {
             id:"3",
             title: "Standard mouse pad",
-            srcimg: "standardmousepad.jpg",
+            srcimg: "img/standardmousepad.jpg",
             description: "$19"
         },
         {
             id:"4",
             title: "XL mouse pad",
-            srcimg: "XLmousepad.jpg",
+            srcimg: "img/XLmousepad.jpg",
             description: "$29"
         },
     ]
@@ -39,14 +36,14 @@ const data = [{
     return(
         <Container>
                 <NavBar></NavBar>
-                <h1>Ranking best sellers periferics</h1>
+                <h1 style={{color:'white'}}>Ranking best sellers periferics</h1>
                 <br/>
                 <br/>
         <Col>
             <CardRanking {...data[0]}/>
             <CardRanking {...data[1]}/>
             <CardRanking {...data[2]}/>
-            <CardRanking {...data[2]}/>
+            <CardRanking {...data[3]}/>
 
         </Col>
     </Container>

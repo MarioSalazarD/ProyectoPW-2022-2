@@ -10,10 +10,10 @@ const CardRanking = (props) => {
     
   const { id, title, srcimg, description } = props;
   return(
-    <Card style={{ width: '70rem', 'margin-left': '2rem' }}>
+    <Card style={{ width: '70rem', 'margin-left': '2rem', 'margin-bottom': '0.5rem' }}>
     <Row className="g-0">
     <Col md={4}>   
-        <Card.Img style={{width: '70rem', 'margin-left': '10rem'}} variant="top" src={ srcimg } />
+        <Card.Img style={{width: '5rem', 'margin-left': '10rem'}} variant="top" src={ srcimg } />
     </Col> 
     <Col md={8}>
         <Card.Body>
