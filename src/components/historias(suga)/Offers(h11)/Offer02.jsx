@@ -4,10 +4,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import './Fondo02.css'
 
-import NavBar from "./Background/NavBar";
+import NavBar from "./OtherElements/NavBar";
 import Card from 'react-bootstrap/Card';
 
-import Botones from './Background/Botones';
+import Botones from './OtherElements/Botones';
 
 const Offer02 = () => {
     return (

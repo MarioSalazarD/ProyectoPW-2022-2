@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Choseen from './components/h10/Choseen';
-import Builder from './components/h10/Builder(h11)';
-import Offer02 from './components/h10/Offers(h11)/Offer02';
-import Offer03 from './components/h10/Offers(h11)/Offer03';
-import Offer04 from './components/h10/Offers(h11)/Offer04';
-import Offer05 from './components/h10/Offers(h11)/Offer05';
-import Offer06 from './components/h10/Offers(h11)/Offer06';
+import Choseen from './components/historias(suga)/Choseen(h10)';
+import Builder from './components/historias(suga)/Builder(h11)';
+import Offer02 from './components/historias(suga)/Offers(h11)/Offer02';
+import Offer03 from './components/historias(suga)/Offers(h11)/Offer03';
+import Offer04 from './components/historias(suga)/Offers(h11)/Offer04';
+import Offer05 from './components/historias(suga)/Offers(h11)/Offer05';
+import Offer06 from './components/historias(suga)/Offers(h11)/Offer06';
+import Estrellas from './components/historias(suga)/Estrellas(h22)';
+import Rankinpc from './components/historias(suga)/RankinPC(h24)';
 
 export default function App2(){
   return(
@@ -25,6 +27,9 @@ export default function App2(){
       <Route path='/offer/4' element={<Offer04 />}/>
       <Route path='/offer/5' element={<Offer05 />}/>
       <Route path='/offer/6' element={<Offer06 />}/>
+      <Route path='/rate' element={<Estrellas />}/>
+      <Route path='/rankin-pc' element={<Rankinpc />}/>
+
 
     </Routes>
     </BrowserRouter>

@@ -5,13 +5,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import ProductCard from './Offers(h11)/Background/Card';
+import ProductCard from './Offers(h11)/OtherElements/Card';
 import './Fondo.css'
 
-import NavBar from "./Offers(h11)/Background/NavBar";
+import NavBar from "./Offers(h11)/OtherElements/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Builder from './Builder(h11)';
-import Botones from './Offers(h11)/Background/Botones';
+import Botones from './Offers(h11)/OtherElements/Botones';
 
 
 const Choseen = () => {

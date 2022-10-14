@@ -4,12 +4,12 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import './Fondo02.css'
 
-import NavBar from "./Background/NavBar";
+import NavBar from "./OtherElements/NavBar";
 import Card from 'react-bootstrap/Card';
 
-import Botones from './Background/Botones';
+import Botones from './OtherElements/Botones';
 
-const Offer06 = () => {
+const Offer03 = () => {
     return (
         <>
         <Container className="vh-100 d-flex flex-column ">
@@ -26,17 +26,17 @@ const Offer06 = () => {
                       </Col>
                       <Col >
                       <h1 style={{width: '120px', 'fontSize': '25px', 'margin-top': '10%', 'margin-left':'51%'}}>Components</h1>
-                      <img src="https://cdn.originpc.com/img/pdp/gaming/desktops/genesis/case-7000x.png" style={{height:'460px' ,width: '400px', 'margin-top': '-300px', marginLeft: '80px'}}></img>
+                      <img src="https://freepikpsd.com/file/2019/11/gaming-pc-transparent-Transparent-Images.png" style={{height:'460px' ,width: '400px', 'margin-top': '-300px', marginLeft: '80px'}}></img>
                       <Card style={{ color:'grey',display: 'inline-block' ,height: '250px' ,width: '475px', 'margin-top': '2%', 'margin-left':'7%',backgroundColor: 'hsl(242, 41%, 24%)', border: 'none'}}>
                       <table style={{height: '250px' , border:'none'}}>
                         <tbody>
                             <tr style={{ border: '1px solid'}}>
-                                <td><img src="https://www.impacto.com.pe/storage/products/1611326980BX8070110700-1.jpg" style={{width: '65px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i7 </td>
-                                <td style={{width: '50px'}}>$389</td>
-                                <td><img src="https://i.blogs.es/cbe9c6/antivirus/840_560.jpg" style={{width: '65px', height:'55px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Aqua </td>
-                                <td style={{width: '50px'}}>$250</td>
+                                <td><img src="https://www.cyberpuerta.mx/img/product/L/CP-INTEL-BX80684I59400F-4.jpg" style={{width: '65px', height:'58px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i5 </td>
+                                <td style={{width: '50px'}}>$159</td>
+                                <td><img src="https://thumbs.dreamstime.com/b/el-icono-y-rojo-del-escudo-de-la-protecci%C3%B3n-seguridad-antivirus-empa%C3%B1aron-fondo-115804050.jpg" style={{width: '65px', height:'55px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Megumin </td>
+                                <td style={{width: '50px'}}>$750</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
@@ -76,7 +76,7 @@ const Offer06 = () => {
                                     <td style={{width: '100px','fontSize': '15px', textAlign:'right'}}>Build Free</td>
                                 </tr>
                                 <tr>
-                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1176</td>
+                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1446</td>
                                     <td style={{'fontSize': '22px', textAlign:'center'}}>$99</td>
                                 </tr>
                             </tbody>
@@ -93,4 +93,4 @@ const Offer06 = () => {
 
 }
 
-export default Offer06;
+export default Offer03;
