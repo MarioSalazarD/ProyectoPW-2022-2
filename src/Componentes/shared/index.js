@@ -10,4 +10,4 @@ export {default as TrashCar} from './TrashCar'
 export {default as CardRanking} from './CardRanking'
 export {default as CardUserReviews} from './CardUserReviews'
 export {default as RatingUserReviews} from './RatingUserReviews'
-
+export {default as CardShoppingHistory} from './CardShoppingHistory'

@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Detailsintelcore, DetailsKeyboard, DetailsNvidia, HomePage, Login, ProfileInfo, Ranking, Review, UserReviews} from './Componentes/pages'
+import { Detailsintelcore, DetailsKeyboard, DetailsNvidia, HomePage, Login, ProfileInfo, Ranking, Review, ShoppingHistory, UserReviews} from './Componentes/pages'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/DetailsNvidia" element={<DetailsNvidia/>}/>  
           <Route path="/Ranking" element={<Ranking/>}/>
           <Route path="/Userreviews" element={<UserReviews/>}/>
+          <Route path="/Shoppinghistory" element={<ShoppingHistory/>}/>
 
         </Routes>
       </BrowserRouter>

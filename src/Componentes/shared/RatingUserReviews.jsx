@@ -13,16 +13,6 @@ const RatingUserReviews = () => {
     </CDBContainer>
   );
 };
-  /* 
-    return (
-      <StarRating
-        defaultValue={5}
-        min={0}
-        max={10}
-        step={0.5} />
-    );
-  
-};
-*/
+
 
 export default RatingUserReviews;
