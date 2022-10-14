@@ -20,7 +20,7 @@ export default function App2(){
     <BrowserRouter>
     <Routes>
 
-      <Route path='/' element={<Choseen />}/>
+      <Route path='/recomend' element={<Choseen />}/>
       <Route path='/offer/1' element={<Builder />}/>
       <Route path='/offer/2' element={<Offer02 />}/>
       <Route path='/offer/3' element={<Offer03 />}/>
