@@ -5,12 +5,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import ProductCard from './Background/Card';
+import ProductCard from './Offers(h11)/Background/Card';
 import './Fondo.css'
 
-import NavBar from "./Background/NavBar";
+import NavBar from "./Offers(h11)/Background/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Builder from './Builder(h11)';
+import Botones from './Offers(h11)/Background/Botones';
 
 
 const Choseen = () => {
@@ -25,17 +26,7 @@ const Choseen = () => {
                       <h1 className='letra'>¿What do you need?</h1> 
                       
                       <Col className='sep'>
-                      <Button href="#" 
-                      style={{'background-color':'white', border: 'none', color: 'black',
-                      padding: '8px 50px', 'text-align': 'center', 'text-decoration': 'none',
-                      display: 'inline-block', 'font-size': '16px'}}>
-                      Back</Button>
-                      <div className='divider'/>
-                      <Button href="#"
-                      style={{'background-color':'purple', border: 'none', color: 'white',
-                      padding: '8px 50px', 'text-align': 'center', 'text-decoration': 'none',
-                      display: 'inline-block', 'font-size': '16px'}}>
-                      Next</Button>
+                      <Botones></Botones>
                       </Col>
                       <Col >
                       <ProductCard path1="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"

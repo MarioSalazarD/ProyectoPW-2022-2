@@ -2,14 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import './Fondo.css'
+import './Fondo02.css'
 
-import NavBar from "./Offers(h11)/Background/NavBar";
+import NavBar from "./Background/NavBar";
 import Card from 'react-bootstrap/Card';
 
-import Botones from './Offers(h11)/Background/Botones';
+import Botones from './Background/Botones';
 
-const Builder = () => {
+const Offer04 = () => {
     return (
         <>
         <Container className="vh-100 d-flex flex-column ">
@@ -26,25 +26,25 @@ const Builder = () => {
                       </Col>
                       <Col >
                       <h1 style={{width: '120px', 'fontSize': '25px', 'margin-top': '10%', 'margin-left':'51%'}}>Components</h1>
-                      <img src="https://www.pngplay.com/wp-content/uploads/12/LED-CPU-Cabinet-No-Background-Clip-Art.png" style={{width: '500px', 'margin-top': '-300px'}}></img>
-                      <Card style={{ color:'grey',display: 'inline-block' ,height: '250px' ,width: '475px', 'margin-top': '2%', 'margin-left':'5%',backgroundColor: 'hsl(242, 41%, 24%)', border: 'none'}}>
+                      <img src="https://cdn.originpc.com/img/pdp/gaming/desktops/genesis/genesis-7000-series-hero.png" style={{height:'460px' ,width: '400px', 'margin-top': '-300px', marginLeft: '80px'}}></img>
+                      <Card style={{ color:'grey',display: 'inline-block' ,height: '250px' ,width: '475px', 'margin-top': '2%', 'margin-left':'7%',backgroundColor: 'hsl(242, 41%, 24%)', border: 'none'}}>
                       <table style={{height: '250px' , border:'none'}}>
                         <tbody>
                             <tr style={{ border: '1px solid'}}>
-                                <td><img src="https://www.impacto.com.pe/storage/products/1611326980BX8070110700-1.jpg" style={{width: '65px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i7 </td>
-                                <td style={{width: '50px'}}>$389</td>
+                                <td><img src="https://i.blogs.es/4af7cf/corei9-2/1366_2000.jpg" style={{width: '65px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i8 </td>
+                                <td style={{width: '50px'}}>$489</td>
                                 <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus NVIDIA.1 </td>
-                                <td style={{width: '50px'}}>$550</td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Panda </td>
+                                <td style={{width: '50px'}}>$150</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>16gb ram    </td>
-                                <td style={{width: '50px'}}>$99</td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>64gb ram    </td>
+                                <td style={{width: '50px'}}>$499</td>
                                 <td><img src="https://www.pcworld.com/wp-content/uploads/2021/09/wd-black-sn750-nvme-gaming-ssd-100786895-orig-2.jpg?quality=50&strip=all&w=1024" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>1TB MVME    </td>
-                                <td style={{width: '50px'}}>$99</td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>500GB MVME    </td>
+                                <td style={{width: '50px'}}>$49</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.adcomputers.com.pe/wp-content/uploads/2021/12/RR-212S-20PC-R1.jpg" style={{width: '65px', height:'58px'}}/></td>
@@ -68,7 +68,7 @@ const Builder = () => {
 
                       </Col>
 
-                      <Card style={{ color:'grey',display: 'inline-block' ,height: '100px' ,width: '300px', 'margin-top': '0%', 'margin-left':'100px',backgroundColor: 'hsl(242, 41%, 24%)', border: 'none'}}>
+                      <Card style={{ color:'grey',display: 'inline-block' ,height: '100px' ,width: '300px', 'margin-top': '1%', 'margin-left':'120px',backgroundColor: 'hsl(242, 41%, 24%)', border: 'none'}}>
                         <table  style={{height: '100px' , border:'none'}}>
                             <tbody>
                                 <tr>
@@ -76,7 +76,7 @@ const Builder = () => {
                                     <td style={{width: '100px','fontSize': '15px', textAlign:'right'}}>Build Free</td>
                                 </tr>
                                 <tr>
-                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1386</td>
+                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1436</td>
                                     <td style={{'fontSize': '22px', textAlign:'center'}}>$99</td>
                                 </tr>
                             </tbody>
@@ -93,4 +93,4 @@ const Builder = () => {
 
 }
 
-export default Builder;
+export default Offer04;
