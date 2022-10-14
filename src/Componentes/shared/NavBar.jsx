@@ -8,18 +8,17 @@ import TrashCar from './TrashCar';
 
 const NavBar = () => {
     return(
-        <Container>
             <Navbar bg="dark" variant="dark">
                     <Container>
                     <Navbar.Brand href="/home">Icono</Navbar.Brand>
-                        <Nav>
+                        <Nav className="me-auto">
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="#features">About</Nav.Link>
                             <Nav.Link href="#Support">Support</Nav.Link>
                             <Nav.Link href="Review">Reviews</Nav.Link>
                             <Nav.Link href="Ranking">Ranking</Nav.Link>
                         </Nav>
-                        <Nav className="text end">
+                        <Nav className='ml-auto'>
                         <SearchBar></SearchBar>
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="Login">Login</NavDropdown.Item>
@@ -35,7 +34,6 @@ const NavBar = () => {
                         </Nav>
                     </Container>
                     </Navbar>
-        </Container>
     )
 }
 
