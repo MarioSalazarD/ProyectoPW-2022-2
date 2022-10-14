@@ -26,8 +26,8 @@ const NavBar = () => {
                                     Register
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
+                                <NavDropdown.Item href="Profile">
+                                    Profile
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="Cart">cart</Nav.Link>

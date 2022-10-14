@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import {NavBar , Country} from '../shared';
+import {NavBar , Country, SideBar} from '../shared';
 
 const ProfileInfo = () => {
     return(
@@ -14,7 +14,7 @@ const ProfileInfo = () => {
             </Row>
             <Row>
                 <Col lg="3">
-                INSERTAR MENÚ LATERAL
+                <SideBar></SideBar>
                 </Col>
                 <Col lg="2" className ="Default" style={{ marginTop: '9rem', height : '44rem' , width: '15rem'}}> 
                 <h6><strong>Default</strong></h6>
