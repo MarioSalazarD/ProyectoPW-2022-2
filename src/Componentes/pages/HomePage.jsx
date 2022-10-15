@@ -27,7 +27,7 @@ const HomePage = () => {
                         <h2>Build your PC!</h2>
                         <h4>Just for what you need</h4>
 
-                        <Button href="#">Build for begginers</Button>
+                        <Button href="/recomend">Build for begginers</Button>
                         <div className='divider'/>
                         <Button variant="primary">Advance Building</Button>{' '}
                         <div className='divider'/>
