@@ -8,3 +8,6 @@
 .copyright{
     font-size: smaller;
 }
+#icono{
+    filter:invert(100%)
+}
