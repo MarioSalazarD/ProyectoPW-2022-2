@@ -34,8 +34,8 @@ const Builder = () => {
                                 <td><img src="https://www.impacto.com.pe/storage/products/1611326980BX8070110700-1.jpg" style={{width: '65px'}}/></td>
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i7 </td>
                                 <td style={{width: '50px'}}>$389</td>
-                                <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus NVIDIA.1 </td>
+                                <td><img src="https://i.linio.com/p/702f0f15ec2b3e12ec43c1ab0a3b972c-product.jpg" style={{width: '65px', height:'48px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA RTX 3060 </td>
                                 <td style={{width: '50px'}}>$550</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>

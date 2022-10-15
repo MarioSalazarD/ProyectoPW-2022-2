@@ -49,8 +49,8 @@ const Rankinpc = () => {
                                 <td><img src="https://i.blogs.es/4af7cf/corei9-2/1366_2000.jpg" style={{width: '65px'}}/></td>
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i8 </td>
                                 <td style={{width: '50px'}}>$489</td>
-                                <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus NVIDIA.1 </td>
+                                <td><img src="https://i.linio.com/p/702f0f15ec2b3e12ec43c1ab0a3b972c-product.jpg" style={{width: '65px', height:'48px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA RTX 3060 </td>
                                 <td style={{width: '50px'}}>$550</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
@@ -102,7 +102,7 @@ const Rankinpc = () => {
                                 <tr>
                                     <td><img src="https://www.pngplay.com/wp-content/uploads/12/LED-CPU-Cabinet-No-Background-Clip-Art.png" style={{width: '75px'}}/></td>
                                     <td style={{width: '140px', textAlign:'center'}}>LexCorp Build</td>
-                                    <td style={{width:'250px', textAlign:'right', fontSize:'24px'}}>$2275</td>
+                                    <td style={{width:'250px', textAlign:'right', fontSize:'24px'}}>$2575</td>
                                     
                                 </tr>
                                 
@@ -117,8 +117,8 @@ const Rankinpc = () => {
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i9 </td>
                                 <td style={{width: '50px'}}>$599</td>
                                 <td><img src="https://thumbs.dreamstime.com/b/el-icono-y-rojo-del-escudo-de-la-protecci%C3%B3n-seguridad-antivirus-empa%C3%B1aron-fondo-115804050.jpg" style={{width: '65px', height:'55px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Megumin </td>
-                                <td style={{width: '50px'}}>$750</td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA RTX 3090ti </td>
+                                <td style={{width: '50px'}}>$1050</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                             <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
@@ -168,7 +168,7 @@ const Rankinpc = () => {
                                 <tr>
                                     <td><img src="https://www.pngplay.com/wp-content/uploads/12/LED-CPU-Cabinet-No-Background-Clip-Art.png" style={{width: '75px'}}/></td>
                                     <td style={{width: '200px', textAlign:'center'}}>Render point Build</td>
-                                    <td style={{width:'190px', textAlign:'right', fontSize:'24px'}}>$1436</td>
+                                    <td style={{width:'190px', textAlign:'right', fontSize:'24px'}}>$1635</td>
                                     
                                 </tr>
                                 
@@ -182,8 +182,8 @@ const Rankinpc = () => {
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i8 </td>
                                 <td style={{width: '50px'}}>$489</td>
                                 <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Panda </td>
-                                <td style={{width: '50px'}}>$150</td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA RTX 2060 </td>
+                                <td style={{width: '50px'}}>$349</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
@@ -247,7 +247,7 @@ const Rankinpc = () => {
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i5 </td>
                                 <td style={{width: '50px'}}>$159</td>
                                 <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Panda </td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA GTX 1050ti </td>
                                 <td style={{width: '50px'}}>$150</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>

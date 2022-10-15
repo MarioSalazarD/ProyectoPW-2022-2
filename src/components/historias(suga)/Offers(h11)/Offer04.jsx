@@ -34,9 +34,9 @@ const Offer04 = () => {
                                 <td><img src="https://i.blogs.es/4af7cf/corei9-2/1366_2000.jpg" style={{width: '65px'}}/></td>
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i8 </td>
                                 <td style={{width: '50px'}}>$489</td>
-                                <td><img src="https://www.tecnologia-informatica.com/wp-content/uploads/2018/07/resultado-de-imagen-para-antivirus.png" style={{width: '65px', height:'48px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Panda </td>
-                                <td style={{width: '50px'}}>$150</td>
+                                <td><img src="https://i.linio.com/p/702f0f15ec2b3e12ec43c1ab0a3b972c-product.jpg" style={{width: '65px', height:'48px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>NVIDIA RTX 2060 </td>
+                                <td style={{width: '50px'}}>$349</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
@@ -76,7 +76,7 @@ const Offer04 = () => {
                                     <td style={{width: '100px','fontSize': '15px', textAlign:'right'}}>Build Free</td>
                                 </tr>
                                 <tr>
-                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1436</td>
+                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1635</td>
                                     <td style={{'fontSize': '22px', textAlign:'center'}}>$99</td>
                                 </tr>
                             </tbody>

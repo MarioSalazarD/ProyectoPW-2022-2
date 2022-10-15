@@ -34,9 +34,9 @@ const Offer03 = () => {
                                 <td><img src="https://www.cyberpuerta.mx/img/product/L/CP-INTEL-BX80684I59400F-4.jpg" style={{width: '65px', height:'58px'}}/></td>
                                 <td style={{width: '120px', 'fontSize': '14px'}}>Intel Core i5 </td>
                                 <td style={{width: '50px'}}>$159</td>
-                                <td><img src="https://thumbs.dreamstime.com/b/el-icono-y-rojo-del-escudo-de-la-protecci%C3%B3n-seguridad-antivirus-empa%C3%B1aron-fondo-115804050.jpg" style={{width: '65px', height:'55px'}}/></td>
-                                <td style={{width: '120px', 'fontSize': '14px'}}>Antivirus Megumin </td>
-                                <td style={{width: '50px'}}>$750</td>
+                                <td><img src="https://i.linio.com/p/702f0f15ec2b3e12ec43c1ab0a3b972c-product.jpg" style={{width: '65px', height:'55px'}}/></td>
+                                <td style={{width: '120px', 'fontSize': '14px'}}>ANVIDIA GTX 1080 </td>
+                                <td style={{width: '50px'}}>$470</td>
                             </tr>
                             <tr style={{ border: '1px solid'}}>
                                 <td><img src="https://www.worten.es/i/92d90e4122b596a50229e748b881c5c13920f02e" style={{width: '65px'}}/></td>
@@ -76,7 +76,7 @@ const Offer03 = () => {
                                     <td style={{width: '100px','fontSize': '15px', textAlign:'right'}}>Build Free</td>
                                 </tr>
                                 <tr>
-                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1446</td>
+                                    <td style={{'fontSize': '22px', textAlign:'center'}}>$1166</td>
                                     <td style={{'fontSize': '22px', textAlign:'center'}}>$99</td>
                                 </tr>
                             </tbody>
