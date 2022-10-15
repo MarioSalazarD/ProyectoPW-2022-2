@@ -81,9 +81,8 @@ const ShoppingHistory = () => {
     <div className="row " >
         <div className="col-lg-3">
         <Col>
-                <Col>
+                <Col >
                     <SideBar></SideBar>
-
                 </Col>
             </Col>
         </div>
