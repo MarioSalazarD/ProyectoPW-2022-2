@@ -28,7 +28,7 @@ export default function App2(){
       <Route path='/offer/5' element={<Offer05 />}/>
       <Route path='/offer/6' element={<Offer06 />}/>
       <Route path='/rate' element={<Estrellas />}/>
-      <Route path='/rankin-pc' element={<Rankinpc />}/>
+      <Route path='/ranking-pc' element={<Rankinpc />}/>
 
 
     </Routes>
