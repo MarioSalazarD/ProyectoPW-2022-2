@@ -48,6 +48,26 @@ export default[{
     detail4: "6400 dpi",
     titledetail5: "MOUSE COLOR",
     detail5: "Green",
+},
+{
+    id: "4",
+    imgsrc : "img/SSD.jpg",
+    title: "1TB NVME M.2",
+    price: "Price: $99",
+
+},
+{
+    id: "5",
+    imgsrc : "img/CASE.jpg",
+    title: "COOLER MASTER TD500 RGB",
+    price: "Price: $99",
+
+},
+{
+    id: "6",
+    imgsrc : "img/setup.jpg",
+    title: "BUILD + SETUP + TESTING + WARRANTY",
+    price: "Price: $99",
 }
 ]
 

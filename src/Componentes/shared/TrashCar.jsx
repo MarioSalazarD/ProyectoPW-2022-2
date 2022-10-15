@@ -4,7 +4,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons"
 const TrashCar = () => {
 
     return (
-    <FontAwesomeIcon icon={faTrash} style = {{color: 'white'}}/>
+    <FontAwesomeIcon icon={faTrash} style = {{color: 'black', fontSize: '22px'}}/>
     )
 }
 

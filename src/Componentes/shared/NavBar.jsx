@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import SearchBar from './SearchBar';
-import TrashCar from './TrashCar';
 import './Navbar.css';
-
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => {
     return(
@@ -31,7 +31,7 @@ const NavBar = () => {
                                     Profile
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="Cart">cart</Nav.Link>
+                            <Nav.Link href="/shopingcar"><FontAwesomeIcon icon={faCartShopping} /></Nav.Link>
                         </Nav>
                     </Container>
                     </Navbar>
