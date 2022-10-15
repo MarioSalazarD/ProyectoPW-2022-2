@@ -29,7 +29,7 @@ const HomePage = () => {
 
                         <Button href="/recomend">Build for begginers</Button>
                         <div className='divider'/>
-                        <Button variant="primary">Advance Building</Button>{' '}
+                        <Button href='/ranking-pc' variant="primary">Advance Building</Button>{' '}
                         <div className='divider'/>
                         <Button variant="primary" onClick={handleShow}>New User</Button>{' '}
                         </p>
