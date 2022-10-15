@@ -1,0 +1,80 @@
+h1{
+
+    font-size: 42px;
+    color: var(--text-primary);
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: larger;
+    
+
+}
+
+.accordion-simple  > .active{
+    display: block;
+}
+
+.faq .inactive {
+    display: none;
+
+
+}
+
+.disc{
+   width: 15px;
+   height: 15px;
+   
+}
+.ruler{
+    width: 15px;
+    height: 15px;
+    
+ }
+ .gear{
+    width: 15px;
+    height: 15px;
+    
+ }
+ .system{
+    width: 15px;
+    height: 15px;
+    
+ }
+ 
+.faq >div {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 1000px;
+    padding-right: 100px;
+    margin-left: 40px;
+}
+
+.title{
+
+    color: var(--text-secondary);
+    justify-content: center;
+    font-size: x-large;
+    color: white;
+    
+
+    
+    
+
+
+}
+
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+

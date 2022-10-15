@@ -1,0 +1,67 @@
+.abajo{
+
+    background-color: black;
+    
+    margin-left: 1px;
+
+
+    height: 200px;
+}
+
+.botonConstruir{
+
+    width: 150px;
+    height: 40px;
+    object-position: center;
+    margin-left: 700px;
+    font-size: 17px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    
+    
+}
+
+.medio{
+
+    background-color: white;
+    height: 500px;
+    
+    margin-left: 1px;
+}
+
+.titulo2{
+
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    font-weight: bold;
+    margin-left: 480px;
+    flex-wrap: wrap;
+    display: flex;
+    
+
+    
+    
+}
+
+.titulo{
+
+    font-size: 34px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-left: 150px;
+    font-weight: bolder;
+    flex-wrap: wrap;
+    display: flex;
+
+
+}
+
+.pc{
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    
+
+}

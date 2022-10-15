@@ -1,0 +1,56 @@
+
+.tituloSupp{
+
+    color: white;
+    
+    font-size: 40px;
+    margin-left: 20px;
+    
+    
+    
+
+}
+
+
+
+
+.imagenGuia{
+    width: 400px;
+    height: 350px;
+    padding: 50px;
+}
+.imagenFAQ{
+    width: 400px;
+height: 350px;
+padding: 50px;
+}
+
+.imagenTicket{
+    width: 400px;
+height: 350px;
+padding: 50px;
+}
+
+.contenedorImg{
+    flex: 1;
+    padding-left: 30px;
+    
+
+    margin-left: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.image123{
+    
+
+    display: flex;
+    
+    
+
+}
+
+
+
+

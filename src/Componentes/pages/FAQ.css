@@ -1,0 +1,58 @@
+h1{
+
+    font-size: 42px;
+    color: var(--text-primary);
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: larger;
+    
+
+}
+
+.accordion-simple  > .active{
+    display: block;
+}
+
+.faq .inactive {
+    display: none;
+
+
+}
+
+.faq >div {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 600px;
+    padding-right: 100px;
+}
+
+.title{
+
+    color: var(--text-secondary);
+    justify-content: center;
+    font-size: x-large;
+    color: white;
+    
+
+    
+    
+
+
+}
+
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+
