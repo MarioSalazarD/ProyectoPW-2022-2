@@ -23,18 +23,12 @@ const About = () => {
 <div/>
 
 <img style={{marginLeft:'0px', marginTop:'200px' }} className="pc" src="https://cdn.originpc.com/img/pdp/gaming/desktops/genesis/case-7000d-airflow.png"  />
-<div style={{marginLeft:'100px', marginTop:'-250px' }}>
+<div style={{marginLeft:'100px', marginTop:'-25 0px' }}>
 <h2  className="titulo2" >OUR MISSION IS TO BUILD GAMING PCs AT THE BEST PRICE WITHOUT CUTTING CORNERS </h2>
 </div>
 </Row>
 
-<Row className="abajo">
-<<<<<<< HEAD
-<Button className="botonConstruir" href="/Building">Let's Build</Button>
-=======
-<Button href="/recomend" className="botonConstruir" >Let's Build</Button>
->>>>>>> ce11820798c545c2dfe4217874cb95ce7a11aa35
-</Row>
+
 
 </Container>
 
