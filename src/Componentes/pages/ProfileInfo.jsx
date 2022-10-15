@@ -16,11 +16,11 @@ const ProfileInfo = () => {
                 <Col lg="3">
                 <SideBar></SideBar>
                 </Col>
-                <Col lg="2" className ="Default" style={{ marginTop: '9rem', height : '44rem' , width: '15rem'}}> 
-                <h6><strong>Default</strong></h6>
+                <Col lg="2" className ="Default" style={{ marginTop: '14rem', height : '52rem' , width: '15rem', marginLeft: '23rem'}}> 
+                <h6><strong style={{ fontSize: '13px' }}>Default</strong></h6>
                 <p>Ed Va <br/> United States</p>
                 </Col >
-                <Col className = "Form" style={{ marginTop: '9rem', height : '44rem' }}>
+                <Col className = "Form" style={{ marginTop: '14rem', height : '52rem' , marginRight : '30rem'}}>
                     <Form>
                     <Row className="mb-3" >
                         <Form.Group as={Col} controlId="formGridFirstName">
