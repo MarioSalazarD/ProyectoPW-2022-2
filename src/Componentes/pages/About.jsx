@@ -27,7 +27,7 @@ const About = () => {
 </Row>
 
 <Row className="abajo">
-<Button className="botonConstruir" href="#">Let's Build</Button>
+<Button className="botonConstruir" href="/Building">Let's Build</Button>
 </Row>
 
 </Container>

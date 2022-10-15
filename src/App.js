@@ -1,5 +1,5 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Detailsintelcore, DetailsKeyboard, DetailsNvidia, HomePage, Login, ProfileInfo, Ranking, Register, Review, ShoppingHistory, UserReviews, FAQ, Support, Guides, About, Ticket, Shopingcar} from './Componentes/pages'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Checkout, Building, Detailsintelcore, DetailsKeyboard, DetailsNvidia, HomePage, Login, ProfileInfo, Ranking, Register, Review, ShoppingHistory, UserReviews, FAQ, Support, Guides, About, Ticket, Shopingcar} from './Componentes/pages';
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
           <Route path="/guides" element={<Guides/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/ticket" element={<Ticket/>}/>
+          <Route path="/building" element={<Building/>}/>
+          <Route path="/checkout" element={<Checkout/>}/>
 
         </Routes>
       </BrowserRouter>

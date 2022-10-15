@@ -11,4 +11,6 @@ export {default as CardRanking} from './CardRanking'
 export {default as CardUserReviews} from './CardUserReviews'
 export {default as RatingUserReviews} from './RatingUserReviews'
 export {default as SideBar} from './SideBar'
+export {default as DropDown} from './DropDown'
+export {default as DdTitulo} from './DdTitulo'
 
