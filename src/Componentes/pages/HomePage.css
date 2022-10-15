@@ -1,11 +1,14 @@
 html,body{
     background-color: grey !important;
+    
 }
 .body-main{
+    
     background-color: #32314a;
     padding: 32px;
     margin-right: 12px;
     margin-left: 12px;
+    
 }
 .text-main{
     color: white;
@@ -21,5 +24,12 @@ html,body{
 }
 .Container{
     height:100%;
-    width: 100%
+    width: 100%;
+}
+.h-100 h2{
+    font-size: 35px;
+}
+.h-100 h4{
+    margin: 5px;
+    padding: 5px;
 }
