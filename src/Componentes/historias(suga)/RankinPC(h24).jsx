@@ -7,12 +7,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ProductCard from './Offers(h11)/OtherElements/Card';
 import './Fondo.css'
 
-import NavBar from "./Offers(h11)/OtherElements/NavBar";
 import NavBar2 from './Offers(h11)/OtherElements/NavBar2';
-import Botones from './Offers(h11)/OtherElements/Botones';
 
 
 const Rankinpc = () => {
@@ -42,7 +39,7 @@ const Rankinpc = () => {
                                 
                             </tbody>
                          </table>
-                         <BsAlert variant="success" show={show} style={{color: 'grey', width:'450px' , 'margin-top': '0px', 'margin-left':'100px'}}>
+                         <BsAlert variant="success" show={show} style={{backgroundColor:'white', color: 'grey', width:'450px' , 'margin-top': '0px', 'margin-left':'100px'}}>
                          
                          <table style={{height: '250px' , border:'none'}}>
                           <tbody>
@@ -102,8 +99,8 @@ const Rankinpc = () => {
                             <tbody>
                                 <tr>
                                     <td><img src="https://www.pngplay.com/wp-content/uploads/12/LED-CPU-Cabinet-No-Background-Clip-Art.png" style={{width: '75px'}}/></td>
-                                    <td style={{width: '140px', textAlign:'center'}}>LexCorp Build</td>
-                                    <td style={{width:'250px', textAlign:'right', fontSize:'24px'}}>$2575</td>
+                                    <td style={{width: '155px', textAlign:'center'}}>LexCorp Build</td>
+                                    <td style={{width:'240px', textAlign:'right', fontSize:'24px'}}>$2575</td>
                                     
                                 </tr>
                                 
