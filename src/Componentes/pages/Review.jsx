@@ -42,7 +42,7 @@ const data = [{
                       style={{'background-color':'purple', border: 'none', color: 'black',
                       padding: '8px 50px', 'text-align': 'center', 'text-decoration': 'none',
                       display: 'inline-block', 'font-size': '16px', width:'200'}}>
-                      Back</Button>
+                      User review</Button>
             <ReviewCard {...data[0]}/>
             <ReviewCard {...data[1]}/>
             <ReviewCard {...data[2]}/>
