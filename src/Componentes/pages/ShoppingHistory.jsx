@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
 import CardShoppingHistory from '../shared/CardShoppingHistory';
-import { NavBar } from '../shared';
+import { NavBar, SideBar } from '../shared';
 
 
 
@@ -81,9 +81,8 @@ const ShoppingHistory = () => {
     <div className="row " >
         <div className="col-lg-3">
         <Col>
-                <Col>
-                    <h1>Menú lateral</h1>
-
+                <Col >
+                    <SideBar></SideBar>
                 </Col>
             </Col>
         </div>

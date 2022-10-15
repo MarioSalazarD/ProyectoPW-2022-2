@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
 import CardRanking from '../shared/CardRanking';
 import { NavBar } from '../shared';
+import Button from 'react-bootstrap/Button';
 
 
 const Ranking = () => {
@@ -40,6 +41,14 @@ const data = [{
                 <br/>
                 <br/>
         <Col>
+             <Button href="/ranking-pc" 
+                      style={{'background-color':'white', border: 'none', color: 'black',
+                      padding: '8px 25px', 'text-align': 'center', 'text-decoration': 'none',
+                      display: 'inline-block', 'font-size': '16px', marginTop:'-180px', marginLeft:'900px'}}>
+                PC's
+            </Button>
+                      
+                      
             <CardRanking {...data[0]}/>
             <CardRanking {...data[1]}/>
             <CardRanking {...data[2]}/>

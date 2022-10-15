@@ -14,10 +14,12 @@
     letter-spacing: 1px;
     align-items: center;
     text-align: left;
+    margin-left: 200px;
 
 }
 .MenuBox ul{
-    margin-top: 9rem;
+    margin-top: 14rem;
+    margin-left: 0px;
 }
 #Button{
     display: block;

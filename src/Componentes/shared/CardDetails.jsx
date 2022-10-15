@@ -3,7 +3,7 @@ import React from "react"
 const CardDetails = (props) => {
 
     return (
-        <Card style={{ width: '23rem','margin-left': '7rem', 'margin-top': '13.5rem', height: '28.6rem' , backgroundColor : '#154c8b'}}>
+        <Card style={{ width: '34rem','margin-left': '7rem', 'margin-top': '15rem', height: '43rem' , backgroundColor : '#154c8b'}}>
         <Card.Body>
           <Card.Title style = {{fontSize : '28px', color :'white' , 'font-style': 'italic', 'font-family':  'fantasy'}}>{props.item.title}</Card.Title>
           <Card.Subtitle style = {{color :'white', paddingTop: '10px', paddingBottom: '10px'}} className="mb-2">{props.item.price}</Card.Subtitle>

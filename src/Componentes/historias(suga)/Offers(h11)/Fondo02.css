@@ -1,0 +1,43 @@
+html,body{
+    background-color: grey !important;
+}
+.body-main{
+    background-color: #32314a;
+    padding: 32px;
+    margin-right: 12px;
+    margin-left: 12px;
+    
+}
+
+.Container{
+    background-color: hsl(242, 21%, 24%);
+    height:100%;
+    width: 100%
+}
+
+h1{
+    color: darkgray;
+    margin-left: 40px;
+    width: 40%;
+   /* border: solid; */
+}
+
+.divider{
+    width: 50px;
+    height:auto;
+    display:inline-block;
+}
+
+.divider1{
+    width: 200px;
+    height:auto;
+    display:inline-block;
+}
+
+.sep{
+    width: 35%;
+    margin-top: -55px;
+    margin-left: 68%;
+   /* border: solid;*/
+}
+

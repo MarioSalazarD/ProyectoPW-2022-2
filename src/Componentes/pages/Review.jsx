@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReviewCard from '../shared/ReviewCard';
 import { NavBar } from '../shared';
+import Button from 'react-bootstrap/Button';
 
 
 const Review = () => {
@@ -31,11 +32,17 @@ const data = [{
 
     return(
         <Container>
+            
                 <NavBar></NavBar>
                 <h1 style = {{'color':'white'}}>Influencers</h1>
                 <br/>
                 <br/>
         <Row>
+        <Button href="/Userreviews" 
+                      style={{'background-color':'purple', border: 'none', color: 'black',
+                      padding: '8px 50px', 'text-align': 'center', 'text-decoration': 'none',
+                      display: 'inline-block', 'font-size': '16px', width:'200'}}>
+                      User review</Button>
             <ReviewCard {...data[0]}/>
             <ReviewCard {...data[1]}/>
             <ReviewCard {...data[2]}/>

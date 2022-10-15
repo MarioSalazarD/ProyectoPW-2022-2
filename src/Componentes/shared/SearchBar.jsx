@@ -34,14 +34,14 @@ const CustomMenu = React.forwardRef(
         className={className}
         aria-labelledby={labeledBy}
       >
-        <Form.Control
+        <Form.Control  style = {{width: '20em'}}
           autoFocus
-          className="mx-3 my-2 w-auto"
+          className="mx-3 my-2"
           placeholder="Search components"
           onChange={(e) => setValue(e.target.value)}
           value={value}
         />
-        <ul className="list-unstyled">
+        <ul className="list-unstyled" style ={{fontSize: '1.5rem'}}>
         <span style={{marginLeft : '1rem'}}>Products</span>
         <hr style={{marginTop: '0.5rem'}} />
           {React.Children.toArray(children).filter(
@@ -58,8 +58,8 @@ const CustomMenu = React.forwardRef(
 const SearchBar = () => {
     return(
     
-        <Dropdown>
-            <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">  </Dropdown.Toggle>
+        <Dropdown >
+            <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" >  </Dropdown.Toggle>
 
             <Dropdown.Menu as={CustomMenu}>
             <Dropdown.Item eventKey = "1" href="/detailsnvidia" style ={{'font-family':  'fantasy'}}>NVIDIA GEFORCE RTX 3070 8GB (VR READY)</Dropdown.Item>
