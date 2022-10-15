@@ -2,7 +2,12 @@
     background-color: #212126;
     padding: 32px;
     color: white;
+    font-size: 10px !important;
+    text-decoration: none;
 }
 .copyright{
     font-size: smaller;
+}
+#icono{
+    filter:invert(100%)
 }

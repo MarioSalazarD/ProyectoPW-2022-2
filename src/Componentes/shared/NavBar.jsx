@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import SearchBar from './SearchBar';
 import TrashCar from './TrashCar';
+import './Navbar.css';
 
 
 const NavBar = () => {
     return(
-            <Navbar bg="dark" variant="dark">
+            <Navbar className='navbar1' bg="dark" variant="dark">
                     <Container>
-                    <Navbar.Brand href="/home">Icono</Navbar.Brand>
+                    <Navbar.Brand href="/home"><img src="img/instagram.svg" alt="Icono" width="50" height="50" /></Navbar.Brand>
                         <Nav className="me-auto">
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>

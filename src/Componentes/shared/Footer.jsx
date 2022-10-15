@@ -39,7 +39,10 @@ const Footer = () => {
                 </Col>
             </Row>
             <Row>
-                <div>logo   logo    logo</div>
+                <div>
+                    <img id='icono' src="img/instagram.svg" alt="Icono" width="20" height="20" />
+                    <img id='icono' src="img/facebook.svg" alt="Icono" width="20" height="20" />
+                    logo</div>
             </Row>
             <Row>
                 <Col className='copyright'>
