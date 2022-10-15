@@ -44,7 +44,7 @@ const data = [{
              <Button href="/ranking-pc" 
                       style={{'background-color':'white', border: 'none', color: 'black',
                       padding: '8px 25px', 'text-align': 'center', 'text-decoration': 'none',
-                      display: 'inline-block', 'font-size': '16px', marginTop:'-250px', marginLeft:'900px'}}>
+                      display: 'inline-block', 'font-size': '16px', marginTop:'-180px', marginLeft:'900px'}}>
                 PC's
             </Button>
                       
