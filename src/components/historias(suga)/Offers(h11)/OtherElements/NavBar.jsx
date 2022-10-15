@@ -12,7 +12,8 @@ const NavBar = () => {
             <Navbar bg="dark" variant="dark">
                     <Container>
                     <Navbar.Brand href="/home">Icono</Navbar.Brand>
-                        <Nav>
+                        <Nav style={{ 'font-size': 'large', 
+                        width:'350px' , 'margin-left':'-300px'}}>
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="#features">About</Nav.Link>
                             <Nav.Link href="#Support">Support</Nav.Link>
@@ -39,3 +40,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
