@@ -10,7 +10,7 @@ const SideBar = () =>
         <div className='MenuBox'>
             <ul>
                 <li>
-                    <Button id='Button' href="/">Order History</Button>
+                    <Button id='Button' href="/Shoppinghistory">Order History</Button>
                 </li>
                 <li>
                     <Button id='Button' href="Profile">Profile Info</Button>
