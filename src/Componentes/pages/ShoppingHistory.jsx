@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
 import CardShoppingHistory from '../shared/CardShoppingHistory';
 import { NavBar } from '../shared';
-import CardMenuSH from '../shared/CardMenuSH';
+
 
 
 const ShoppingHistory = () => {
@@ -77,23 +77,39 @@ const ShoppingHistory = () => {
     return(
         <Container>
                 <NavBar></NavBar>
-                
+               
+    <div className="row " >
+        <div className="col-lg-3">
         <Col>
-            <Col>
-                <CardShoppingHistory {...data[0]}/>
-                <CardShoppingHistory {...data[1]}/>
-                <CardShoppingHistory {...data[2]}/>
-                <CardShoppingHistory {...data[3]}/>
-                <CardShoppingHistory {...data[4]}/>
-                <CardShoppingHistory {...data[5]}/>
+                <Col>
+                    <h1>Menú lateral</h1>
 
+                </Col>
             </Col>
-            <Row>
-                <CardMenuSH {...data2[0]}/>
-                <CardMenuSH {...data2[1]}/>
-                <CardMenuSH {...data2[2]}/>
-            </Row>
-        </Col>
+        </div>
+        <div className="col-lg-3" >
+            
+            <Col>
+                <Col>
+                    <CardShoppingHistory {...data[0]}/>
+                    <CardShoppingHistory {...data[1]}/>
+                    <CardShoppingHistory {...data[2]}/>
+                    <CardShoppingHistory {...data[3]}/>
+                    <CardShoppingHistory {...data[4]}/>
+                    <CardShoppingHistory {...data[5]}/>
+
+                </Col>
+            </Col>
+
+        </div>
+        </div>
+
+      
+
+
+         
+
+ 
     </Container>
     )
 
