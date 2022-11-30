@@ -39,7 +39,7 @@ const Login = () => {
           </div>
           <p className="forgot-password text-right mt-2">
             Forgot <a href="#">password?</a> <br />
-            Or make a <a href="/register">New Account</a> insted
+            Or make a <a href="/register">New Account</a> instead
           </p>
         </div>
       </form>
