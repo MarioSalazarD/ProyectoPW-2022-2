@@ -3,7 +3,7 @@ import Base from './base'
 const endpoint = '/usuario';
 
 const create = async (request) => {
-    return await Base.post('http://localhost:3001/usuario/Usuarios/post',request);
+    return await Base.post(endpoint,request);
 }
 
 const findAll = async() => {

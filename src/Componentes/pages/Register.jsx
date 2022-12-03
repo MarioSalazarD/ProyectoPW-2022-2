@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { Link, useNavigate } from "react-router-dom"
 import {NavBar, Footer} from '../shared';
 import './Login.css'
 import UsuarioApi from '../../api/Usuario'
@@ -11,6 +12,7 @@ const Register = () => {
     const [password, setPassword] = useState("")
     const [nombre, setNombre] = useState("")
     const [apellido, setApellido] = useState("")
+    const navigate = useNavigate()
     const usuarioRegister = async (nombre,apellido,correo,password) => {
     
 
@@ -33,6 +35,7 @@ const Register = () => {
         setError(true)
     }else{
         setError(false)
+        navigate("/Login")
     }
   }
 
