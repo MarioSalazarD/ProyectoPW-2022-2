@@ -4,10 +4,35 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React from "react"
 import TrashCar from './TrashCar';
+import ProductoApi from '../../api/Producto';
 
 const CardShoppingCar = (props) =>
 {
-    const {title, imgsrc, price } = props;
+
+    const [ productoData, setProductoData] = useState([])
+
+    useEffect(() => {
+        handleOnLoad()
+    },[])
+
+    const handleOnLoad = async () => {
+        const result = await ProductoApi.findOne();
+        setProductoData(result.data)
+        console.log(result);
+    } 
+
+    const professorTableRows = productoData.map(item => {
+        const {id, nombre, precio, descripcion } = item
+        return (
+          <tr>
+            <td>{id}</td>
+            <td>{nombre}</td>
+            <td>{precio}</td>
+            <td>{descripcion}</td>
+          </tr>  
+        )
+    })
+
     return(
       <Card style={{ width: '70rem', height : '8rem','margin-left' :'35rem', 'margin-bottom': '.7em' }}>
       <Row className="g-0">

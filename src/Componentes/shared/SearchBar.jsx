@@ -75,22 +75,27 @@ const SearchBar = () => {
   const DropDownRows = prearmadoData.map(item => {
     const {id, name, descripcion } = item
     return (
-      <Dropdown >
-      <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" >  </Dropdown.Toggle>
-
-      <Dropdown.Menu as={CustomMenu}>
-      <Dropdown.Item eventKey = "1" href="/detailsnvidia" style ={{'font-family':  'fantasy'}}>NVIDIA GEFORCE RTX 3070 8GB (VR READY)</Dropdown.Item>
-      <Dropdown.Item eventKey = "2" href="/detailsintelcore" style ={{'font-family':  'fantasy'}}>INTEL CORE I7-12700F 12-CORE</Dropdown.Item>
-      <Dropdown.Item eventKey = "3" href="/detailskeyboard" style ={{'font-family':  'fantasy'}}>KEYBOARD AND MOUSE RAZER</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+      <tr>
+        <td>{id}</td>
+        <td>{name}</td>
+        <td>{level}</td>
+        <td>{idProfessor}</td>
+      </tr>  
     )
 })
 
 
     return(
     
-        
+        <Dropdown >
+            <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" >  </Dropdown.Toggle>
+
+            <Dropdown.Menu as={CustomMenu}>
+            <Dropdown.Item eventKey = "1" href="/detailsnvidia" style ={{'font-family':  'fantasy'}}>NVIDIA GEFORCE RTX 3070 8GB (VR READY)</Dropdown.Item>
+            <Dropdown.Item eventKey = "2" href="/detailsintelcore" style ={{'font-family':  'fantasy'}}>INTEL CORE I7-12700F 12-CORE</Dropdown.Item>
+            <Dropdown.Item eventKey = "3" href="/detailskeyboard" style ={{'font-family':  'fantasy'}}>KEYBOARD AND MOUSE RAZER</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
 
     )
 }
