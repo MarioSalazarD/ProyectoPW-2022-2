@@ -39,7 +39,7 @@ const Login = () => {
         );
         console.log(JSON.stringify(response?.data));
         const accessToken =response?.data?.accessToken;
-        setAuth({correo, password, accessToken})
+        setAuth({correo, password})
         setCorreo('');
         setPasword('');
         setSuccess(true)
