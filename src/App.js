@@ -10,6 +10,8 @@ import Offer05 from './Componentes/historias(suga)/Offers(h11)/Offer05';
 import Offer06 from './Componentes/historias(suga)/Offers(h11)/Offer06';
 import Rankinpc from './Componentes/historias(suga)/RankinPC(h24)';
 import Estrellas from './Componentes/historias(suga)/Estrellas(h22)';
+import Estrellas2 from './Componentes/historias(suga)/Estrellas2';
+
 
 
 function App() {
@@ -47,6 +49,7 @@ function App() {
           <Route path='/offer/6' element={<Offer06 />}/>
           <Route path='/ranking-pc' element={<Rankinpc />}/>
           <Route path='/rate' element={<Estrellas />}/>
+          <Route path='/rate2' element={<Estrellas2 />}/>
 
 
 
