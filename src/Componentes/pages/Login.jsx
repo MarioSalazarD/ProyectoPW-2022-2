@@ -36,17 +36,10 @@ const Login = () => {
         }
     })
     const dataResp = await resp.json()
-<<<<<<< HEAD
     if(dataResp.error === ""){
         navigate("/")
     }else{
         navigate("/Login")
-=======
-    if(dataResp.password !== password){
-        setError(false)
-    }else{
-        setError(true)
->>>>>>> 168daad68f698d97b3ffab17de4826522b0791dd
     }
   }
 
