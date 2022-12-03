@@ -13,6 +13,7 @@ import Estrellas from './Componentes/historias(suga)/Estrellas(h22)';
 import Estrellas2 from './Componentes/historias(suga)/Estrellas2';
 
 
+const PORT =process.env.PORT || 3001;
 
 function App() {
   return (
@@ -57,5 +58,7 @@ function App() {
     </>
   );
 }
-
+App.listen(PORT, ()=>{
+  console.log(`server runing on ${PORT}`);
+})
 export default App;
