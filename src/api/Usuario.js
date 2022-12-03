@@ -28,7 +28,7 @@ const remove = async(id) => {
 }
 
 const login = async (email, password) => {
-    return await axios.get(`http://localhost:3001/usuario/${email}/${password}`);
+    return await axios.get(`https://basededatosfinal-production.up.railway.app/usuario/${email}/${password}`);
 }
 
 const UsuarioApi = { create, findAll, findOne, update, remove, login }

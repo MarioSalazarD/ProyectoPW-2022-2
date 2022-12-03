@@ -22,7 +22,7 @@ const Register = () => {
         correo : correo,
         password : password
     }
-    const resp = await fetch(`http://localhost:3001/usuario/usuarios/post`, {
+    const resp = await fetch(`https://basededatosfinal-production.up.railway.app/usuario/usuarios/post`, {
         method : "POST",
         body : JSON.stringify(data),
         headers : {
