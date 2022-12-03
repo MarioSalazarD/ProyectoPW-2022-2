@@ -6,26 +6,40 @@ import UsuarioApi from '../../api/Usuario'
 import { useState, useEffect } from 'react'
 
 const Register = () => {
+    const [error, setError] = useState(false)
+    const [correo, setCorreo] = useState("")
+    const [contrasena, setContrasena] = useState("")
+    const [nombre, setNombre] = useState("")
+    const [apellido, setApellido] = useState("")
+    const usuarioRegister = async (nombre,apellido,correo,contrasena) => {
+    
 
-    const defaultRegister = {
-      id: 0,
-      nombre:'',
-      apellido:'',
-      correo:'',
-      password:'',
+    const data = {
+        nombre : nombre,
+        apellido : apellido,
+        correo : correo,
+        contrasena : contrasena
     }
-    const [register, setRegister] = useState(defaultRegister)
-
-    useEffect(()=> {
-    }, [register])
-
-    const handleOnClick = () => {
-      UsuarioApi.post(register)
-        .then(response => {
-          console.log({response})
-          alert(response.statusText)
-        })
+    const resp = await fetch(`http://localhost:3001/usuario/usuarios/post`, {
+        method : "POST",
+        body : JSON.stringify(data),
+        headers : {
+            "Content-Type" : "application/json"
+        }
+    })
+    const dataResp = await resp.json()
+    if(dataResp.error !== ""){
+        console.error(dataResp.error)
+        setError(true)
+    }else{
+        setError(false)
     }
+  }
+
+  const registrar = (nombre,apellido,correo,contrasena) => {
+    console.log(`Nombre: ${nombre} Apellido: ${apellido} Correo: ${correo} Contraseña: ${contrasena}`)
+    usuarioRegister(nombre,apellido,correo,contrasena)
+}
 
     return(
         <Container>
@@ -43,8 +57,8 @@ const Register = () => {
               type="text"
               className="form-control mt-1"
               placeholder="Enter Name" 
-              value={register.nombre}
-              onChange = {e => setRegister({...register, nombre: e.currentTarget.value})}
+              value={nombre}
+              onChange = {(evt) => {setNombre(evt.target.value)}}
             />
           </div>
           <div className="form-group mt-3">
@@ -73,7 +87,7 @@ const Register = () => {
           </div>
           <div className="d-grid gap-2 mt-3">
             <button type="screate" className="btn btn-primary"
-            onClick={() => handleOnClick()}>
+            onClick={() => registrar(nombre,apellido,correo,contrasena)}>
               Create
             </button>
           </div>
