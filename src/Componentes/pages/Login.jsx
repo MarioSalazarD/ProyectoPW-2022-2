@@ -9,6 +9,14 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Login = () => {
 
+  const [first, setFirst] = useState('');
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log('form submitted');
+  }
+
+
   const [correo, setCorreo] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate()
@@ -28,11 +36,9 @@ const Login = () => {
     })
     const dataResp = await resp.json()
     if(dataResp.password !== password){
-        navigate("/")
         setError(false)
     }else{
         setError(true)
-        navigate("/Login")
     }
   }
 
@@ -47,7 +53,7 @@ const Login = () => {
             </Row>
             <Row>
             <div className="Auth-form-container">
-      <form className="Auth-form">
+      <form className="Auth-form" onSubmit={handleSubmit}>
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Sign In</h3>
           <div className="form-group mt-3">
@@ -72,7 +78,7 @@ const Login = () => {
           </div>
           <div className="d-grid gap-2 mt-3">
             <button type="submit" className="btn btn-primary"
-            onClick={() => Logining(correo,password)}>
+            >
               Submit
             </button>
           </div>
