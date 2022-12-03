@@ -2,8 +2,30 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import {NavBar, Footer} from '../shared';
 import './Login.css'
+import UsuarioApi from '../../api/Usuario'
 
 const Register = () => {
+
+    const defaultRegister = {
+      id: 0,
+      nombre:'',
+      apellido:'',
+      correo:'',
+      password:'',
+    }
+    const [register, setRegister] = useState(defaultRegister)
+
+    useEffect(()=> {
+    }, [enrollment])
+
+    const handleOnClick = () => {
+      UsuarioApi.post(register)
+        .then(Response => {
+          console.log({response})
+          alert(response.statusText)
+        })
+    }
+
     return(
         <Container>
             <Row>
@@ -19,7 +41,9 @@ const Register = () => {
             <input
               type="text"
               className="form-control mt-1"
-              placeholder="Enter Name"
+              placeholder="Enter Name" 
+              value={register.nombre}
+              onChange = {e => setRegister({...register, nombre: e.currentTarget.value})}
             />
           </div>
           <div className="form-group mt-3">
