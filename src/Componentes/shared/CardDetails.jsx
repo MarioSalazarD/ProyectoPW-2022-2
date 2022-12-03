@@ -3,30 +3,6 @@ import React from "react"
 import ProductoApi from '../../api/Producto';
 const CardDetails = (props) => {
 
-  const [ productoData, setproductoData] = useState([])
-
-  useEffect(() => {
-      handleOnLoad()
-  },[])
-
-  const handleOnLoad = async () => {
-      const result = await ProductoApi.findOne();
-      setproductoData(result.data)
-      console.log(result);
-  } 
-
-
-  const DropDownRows = productoData.map(item => {
-    const {id, nombre,precio, descripcion } = item
-    return (
-      <tr>
-        <td>{id}</td>
-        <td>{nombre}</td>
-        <td>{precio}</td>
-        <td>{descripcion}</td>
-      </tr>  
-    )
-})
 
     return (
         <Card style={{ width: '34rem','margin-left': '7rem', 'margin-top': '15rem', height: '43rem' , backgroundColor : '#154c8b'}}>
