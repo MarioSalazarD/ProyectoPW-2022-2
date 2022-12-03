@@ -54,7 +54,7 @@ const Estrellas = () => {
                         </svg>
                         <h1 style={{ 'font-size': '12px', color: 'black', width:'120px' , 'margin-top': '10px', 'margin-left':'22px'}}>Leave a coment</h1>
                         <textarea style={{ 'font-size': '12px', height:'150px' ,width:'350px' , 'margin-top': '-50px', 'margin-left':'22px', rows:"10" , cols:"40"}} type="text" name="nombredelacaja" ></textarea>
-                        <Button href="/mensaje"
+                        <Button href="/rate2"
                         style={{'background-color':'#571AA1', border: 'none', color: 'white',
                         padding: '5px 15px', 'text-align': 'center', 'text-decoration': 'none',
                         display: 'inline-block', 'font-size': '12px', marginLeft:'22px'}}>
