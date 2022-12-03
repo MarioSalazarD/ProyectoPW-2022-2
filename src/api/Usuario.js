@@ -1,4 +1,5 @@
 import Base from './base'
+import axios from 'axios'
 
 const endpoint = '/usuario';
 
@@ -26,6 +27,10 @@ const remove = async(id) => {
     return await Base.remove(newEndpoint);
 }
 
-const UsuarioApi = { create, findAll, findOne, update, remove }
+const login = async (email, password) => {
+    return await axios.get(`http://localhost:3001/usuario/${email}/${password}`);
+}
+
+const UsuarioApi = { create, findAll, findOne, update, remove, login }
 
 export default UsuarioApi;
