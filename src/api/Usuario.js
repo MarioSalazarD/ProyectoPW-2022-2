@@ -2,7 +2,7 @@ import Base from './base'
 
 const endpoint = '/usuario';
 
-const post = async (request) => {
+const create = async (request) => {
     return await Base.post(endpoint,request);
 }
 

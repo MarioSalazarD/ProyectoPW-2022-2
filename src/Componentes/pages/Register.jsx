@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import {NavBar, Footer} from '../shared';
 import './Login.css'
 import UsuarioApi from '../../api/Usuario'
+import { useState, useEffect } from 'react'
 
 const Register = () => {
 
@@ -16,11 +17,11 @@ const Register = () => {
     const [register, setRegister] = useState(defaultRegister)
 
     useEffect(()=> {
-    }, [enrollment])
+    }, [register])
 
     const handleOnClick = () => {
       UsuarioApi.post(register)
-        .then(Response => {
+        .then(response => {
           console.log({response})
           alert(response.statusText)
         })
