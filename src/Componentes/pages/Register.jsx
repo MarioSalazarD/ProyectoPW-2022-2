@@ -72,7 +72,8 @@ const Register = () => {
             />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <button type="screate" className="btn btn-primary">
+            <button type="screate" className="btn btn-primary"
+            onClick={() => handleOnClick()}>
               Create
             </button>
           </div>
