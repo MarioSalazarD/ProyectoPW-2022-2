@@ -52,13 +52,6 @@ function App() {
           <Route path='/rate2' element={<Estrellas2 />}/>
 
 
-
-
-
-
-
-
-
         </Routes>
       </BrowserRouter>
     </>
