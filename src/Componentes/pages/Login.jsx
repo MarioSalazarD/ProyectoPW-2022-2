@@ -17,9 +17,10 @@ const Login = () => {
   const usuarioLogin = async (correo,password) => {
   const data = {
     correo : correo,
+    password: password
   }
 
-  const resp = await fetch(`http://localhost:3001/usuario/Usuarios/get/:correo"`, {
+  const resp = await fetch(`http://localhost:3001/usuario/login"`, {
         method : "GET",
         body : JSON.stringify(data),
         headers : {
@@ -27,11 +28,9 @@ const Login = () => {
         }
     })
     const dataResp = await resp.json()
-    if(dataResp.password !== password){
+    if(dataResp.error === ""){
         navigate("/")
-        setError(false)
     }else{
-        setError(true)
         navigate("/Login")
     }
   }
