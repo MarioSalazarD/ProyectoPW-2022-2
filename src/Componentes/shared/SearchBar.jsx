@@ -71,10 +71,19 @@ const SearchBar = () => {
       console.log(result);
   } 
 
-
   const DropDownRows = prearmadoData.map(item => {
-    const {id, name, descripcion } = item
+    const {id, nombre, descripcion } = item
     return (
+      <tr>
+        <td>{id}</td>
+        <td>{nombre}</td>
+        <td>{descripcion}</td>
+      </tr>  
+    )
+})
+
+
+    return(
       <Dropdown >
       <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" >  </Dropdown.Toggle>
 
@@ -84,10 +93,9 @@ const SearchBar = () => {
       <Dropdown.Item eventKey = "3" href="/detailskeyboard" style ={{'font-family':  'fantasy'}}>KEYBOARD AND MOUSE RAZER</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
+ 
+
     )
-})
-
-
 }
   
 export default SearchBar

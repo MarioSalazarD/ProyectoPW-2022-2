@@ -79,7 +79,7 @@ const registrar = (correo,nombre, telefono, asunto, descripcion) => {
           <div className="form-group mt-3">
             <label>Name</label>
             <input
-              type="password"
+              type="text"
               className="form-control mt-1"
               placeholder="Enter name"
               value={nombre}
@@ -88,7 +88,7 @@ const registrar = (correo,nombre, telefono, asunto, descripcion) => {
             <div className="form-group mt-3">
             <label>Phone</label>
             <input
-              type="text"
+              type="number"
               className="form-control mt-1"
               placeholder="Enter phone number"
               value={telefono}
