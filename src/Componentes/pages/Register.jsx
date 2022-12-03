@@ -42,7 +42,7 @@ const Register = () => {
   const registrar = (nombre,apellido,correo,password) => {
     console.log(`Nombre: ${nombre} Apellido: ${apellido} Correo: ${correo} Contraseña: ${password}`)
     usuarioRegister(nombre,apellido,correo,password)
-}
+  }
 
     return(
         <Container>
