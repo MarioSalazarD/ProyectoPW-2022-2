@@ -21,6 +21,13 @@ const CardShoppingCar = (props) =>
         console.log(result);
     } 
 
+    const handleOnRemove = async () => {
+        const result = await ProductoApi.remove();
+        setProductoData(result.data)
+        console.log(result);
+    } 
+
+
     const professorTableRows = productoData.map(item => {
         const {id, nombre, precio, descripcion } = item
         return (
@@ -52,7 +59,7 @@ const CardShoppingCar = (props) =>
       </Col>
       <Col md={2}>
           <Card.Body>
-          <Card.Title style={{marginLeft :'3rem', marginTop: '1.5rem'}}> <Button variant="light"><TrashCar></TrashCar></Button> </Card.Title>
+          <Card.Title style={{marginLeft :'3rem', marginTop: '1.5rem'}}> <Button variant="light" ><TrashCar></TrashCar></Button> </Card.Title>
         </Card.Body>
       </Col>
       </Row>

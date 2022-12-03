@@ -71,15 +71,13 @@ const SearchBar = () => {
       console.log(result);
   } 
 
-
   const DropDownRows = prearmadoData.map(item => {
-    const {id, name, descripcion } = item
+    const {id, nombre, descripcion } = item
     return (
       <tr>
         <td>{id}</td>
-        <td>{name}</td>
-        <td>{level}</td>
-        <td>{idProfessor}</td>
+        <td>{nombre}</td>
+        <td>{descripcion}</td>
       </tr>  
     )
 })
