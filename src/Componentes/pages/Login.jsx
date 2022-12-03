@@ -1,80 +1,105 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import {NavBar, Footer} from '../shared';
 import Button from 'react-bootstrap/Button';
 import './Login.css'
-import { useState, useEffect } from 'react'
-import { Link, useNavigate } from "react-router-dom"
+import { useRef, useState, useEffect, useContext } from 'react';
+import AuthContext from '../../context/AuthProvider';
+import axios from 'axios';
+
+const Login_URL = '/auth';
 
 const Login = () => {
 
-  const [first, setFirst] = useState('');
+    const{ setAuth } = useContext(AuthContext);
+    const corrRef = useRef();
+    const errRef = useRef();
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    console.log('form submitted');
-  }
+    const [correo, setCorreo] = useState('');
+    const [password, setPasword] = useState('');
+    const [errMsg, setErrMsg] = useState('');
+    const [success, setSuccess] = useState(false);
 
+    useEffect(()=>{
+      corrRef.current.focus();
+    },{})
 
-  const [correo, setCorreo] = useState("")
-  const [password, setPassword] = useState("")
-  const navigate = useNavigate()
-  const [error, setError] = useState(false)
+    useEffect(()=>{
+      setErrMsg('');
+    },[correo, password])
 
-  const usuarioLogin = async (correo,password) => {
-  const data = {
-    correo : correo,
-    password: password
-  }
-
-  const resp = await fetch(`http://localhost:3001/usuario/login"`, {
-        method : "GET",
-        body : JSON.stringify(data),
-        headers : {
-            "Content-Type" : "application/json"
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try{
+        const response = await axios.post(Login_URL, JSON.stringify({correo, password}),
+        {
+          header: { 'Content/type':'application/json'},
+          withCredentials: true
         }
-    })
-    const dataResp = await resp.json()
-    if(dataResp.error === ""){
-        navigate("/")
-    }else{
-        navigate("/Login")
-    }
-  }
+        );
+        console.log(JSON.stringify(response?.data));
+        const accessToken =response?.data?.accessToken;
+        setAuth({correo, password, accessToken})
+        setCorreo('');
+        setPasword('');
+        setSuccess(true)
+      }catch (err){
+        if(!err?.response){
+          setErrMsg('no server response')
+        }else if (err.response?.status === 400) {
+          setErrMsg('Missing information')
+        }
+        errRef.current.focus();
+      }
 
-  const Logining = (correo,password) => {
-    console.log(`Correo: ${correo} Contraseña: ${password}`)
-    usuarioLogin(correo, password)
-  }
+      
+    }
+
     return(
+      <>
+        {success ?(
+                <Container>
+                  <h1>Estas Logeado</h1>
+                  <br />
+                  <p>
+                    <a href="/">ir a Inicio</a>
+                  </p>
+                </Container>
+        ):(
         <Container>
             <Row>
                 <NavBar></NavBar>
             </Row>
             <Row>
+              <p ref={errRef} className={errMsg ? "errmsg" :
+                "offscreen"} aria-live="assertive">{errMsg}</p>
             <div className="Auth-form-container">
       <form className="Auth-form" onSubmit={handleSubmit}>
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Sign In</h3>
           <div className="form-group mt-3">
-            <label>Email address</label>
+            <label htmlFor='correo'>Email address</label>
             <input
               type="email"
               className="form-control mt-1"
               placeholder="Enter email"
+              name = "correo"
+              ref={corrRef}
+              autoComplete='off'
+              onChange={(e)=>setCorreo(e.target.value)}
               value={correo}
-              onChange = {(evt) => {setCorreo(evt.target.value)}}
+
             />
           </div>
           <div className="form-group mt-3">
-            <label>Password</label>
+            <label htmlFor='password'>Password</label>
             <input
               type="password"
+              id = "password"
               className="form-control mt-1"
               placeholder="Enter password"
+              onChange = {(e)=>setPasword(e.target.value)}
               value={password}
-              onChange = {(evt) => {setPassword(evt.target.value)}}
             />
           </div>
           <div className="d-grid gap-2 mt-3">
@@ -95,7 +120,7 @@ const Login = () => {
                     <Footer></Footer>
 
             </Row>
-        </Container>
+        </Container>)}</>
         
     )
 }
