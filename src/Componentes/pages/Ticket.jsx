@@ -116,7 +116,10 @@ const registrar = (correo,nombre, telefono, asunto, descripcion) => {
           </div>
           </div>
           <Row className="botones">
-          <Button className="botonSubmit" href="#">Submit</Button>
+          <button type="screate" className="btn btn-primary"
+            onClick={() => registrar(correo,nombre, telefono, asunto, descripcion)}>
+              Submit
+            </button>
            </Row>
           
         </div>
