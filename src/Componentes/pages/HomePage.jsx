@@ -24,7 +24,7 @@ const HomePage = () => {
                 email : correo,
             }
 
-            const email = await fetch('http://localhost:3001/email/send',{
+            const email = await fetch('https://basededatosfinal-production.up.railway.app/email/send',{
                 method : "POST",
                 body : JSON.stringify(data),
                 headers : {
