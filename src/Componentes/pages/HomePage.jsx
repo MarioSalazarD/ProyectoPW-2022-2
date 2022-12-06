@@ -8,17 +8,43 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Form } from 'react-bootstrap';
 import Email from '../../api/Email.js'
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
     const [show, setShow] = useState(false);
     const [correo, setCorreo] = useState("")
+    const [error, setError] = useState(false);
+    const navigate = useNavigate();
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const logInOnclick = async () => {
-            const email = await Email.sendEmail(correo);
-            
+    const EmailPrep = async (correo) => {
+            const data={
+                email : correo,
+            }
+
+            const email = await fetch('http://localhost:3001/email/send',{
+                method : "POST",
+                body : JSON.stringify(data),
+                headers : {
+                    "Content-Type" : "application/json"
+                }
+            })
+            const dataResp = await email.json()
+            if(dataResp.error !== ""){
+                console.error(dataResp.error)
+                setError(true)
+            }else{
+                setError(false)
+                navigate("/Login")
+            }
+    }
+
+    const EmailSender =(correo)=>{
+        console.log(`correo enciado a: ${correo}`)
+        EmailPrep(correo)
+        handleClose()
     }
     
 
@@ -67,7 +93,7 @@ const HomePage = () => {
                         <Button variant="secondary" onClick={handleClose}>
                         Close
                         </Button>
-                        <Button variant="primary"onClick={logInOnclick}>
+                        <Button variant="primary"onClick={()=>EmailSender(correo)}>
                           Save Changes
                         </Button>
                         </Modal.Footer>
