@@ -7,13 +7,20 @@ import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Form } from 'react-bootstrap';
+import Email from '../../api/Email.js'
 
 const HomePage = () => {
     const [show, setShow] = useState(false);
-  
+    const [correo, setCorreo] = useState("")
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+
+    const logInOnclick = async () => {
+            const email = await Email.sendEmail(correo);
+            
+    }
+    
 
     return(
         <Container className="vh-100 d-flex flex-column ">
@@ -48,6 +55,8 @@ const HomePage = () => {
                                 <Form.Control
                                 type="email"
                                 placeholder="name@example.com"
+                                value={correo}
+                                onChange={(evt) => setCorreo(evt.target.value)}
                                 autoFocus
                                 />
                             </Form.Group>
@@ -58,7 +67,7 @@ const HomePage = () => {
                         <Button variant="secondary" onClick={handleClose}>
                         Close
                         </Button>
-                        <Button variant="primary" onClick={handleClose}>
+                        <Button variant="primary"onClick={logInOnclick}>
                           Save Changes
                         </Button>
                         </Modal.Footer>
@@ -72,35 +81,7 @@ const HomePage = () => {
     )
 }
 
-function Example() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
-        </Button>
-  
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </>
-    );
-  }
+
 
 
 export default HomePage
