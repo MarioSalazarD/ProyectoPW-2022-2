@@ -2,6 +2,36 @@ import Card from 'react-bootstrap/Card';
 import React from "react"
 import ProductoApi from '../../api/Producto';
 const CardDetails = (props) => {
+  const [ productoData, setProductoData] = useState([])
+
+  useEffect(() => {
+      handleOnLoad()
+  },[])
+
+  const handleOnLoad = async () => {
+      const result = await ProductoApi.findOne();
+      setProductoData(result.data)
+      console.log(result);
+  } 
+
+  const handleOnRemove = async () => {
+      const result = await ProductoApi.remove();
+      setProductoData(result.data)
+      console.log(result);
+  } 
+
+
+  const professorTableRows = productoData.map(item => {
+      const {id, nombre, precio, descripcion } = item
+      return (
+        <tr>
+          <td>{id}</td>
+          <td>{nombre}</td>
+          <td>{precio}</td>
+          <td>{descripcion}</td>
+        </tr>  
+      )
+  })
 
 
     return (

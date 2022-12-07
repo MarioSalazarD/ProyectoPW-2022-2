@@ -5,8 +5,43 @@ import Card from 'react-bootstrap/Card';
 import React from "react"
 import TrashCar from './TrashCar';
 
+
+
 const CardShoppingCar = (props) =>
 {
+    const [ productoData, setProductoData] = useState([])
+
+    useEffect(() => {
+        handleOnLoad()
+    },[])
+
+    const handleOnLoad = async () => {
+        const result = await ProductoApi.findOne();
+        setProductoData(result.data)
+        console.log(result);
+    } 
+
+    const handleOnRemove = async () => {
+        const result = await ProductoApi.remove();
+        setProductoData(result.data)
+        console.log(result);
+    } 
+
+
+    const professorTableRows = productoData.map(item => {
+        const {id, nombre, precio, descripcion } = item
+        return (
+          <tr>
+            <td>{id}</td>
+            <td>{nombre}</td>
+            <td>{precio}</td>
+            <td>{descripcion}</td>
+          </tr>  
+        )
+    })
+
+
+
     const {title, imgsrc, price } = props;
     return(
       <Card style={{ width: '70rem', height : '8rem','margin-left' :'35rem', 'margin-bottom': '.7em' }}>
